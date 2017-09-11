@@ -4,8 +4,8 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "build-css": "node-sass-chokidar src/app/styles/scss -o src/app/styles/css",
-    "watch-css": "npm run build-css && node-sass-chokidar src/app/styles/scss -o src/app/styles/css --watch --recursive",
+    "build-css": "node-sass-chokidar src/styles/scss -o src/styles/css",
+    "watch-css": "npm run build-css && node-sass-chokidar src/styles/scss -o src/styles/css --watch --recursive",
     "start-js": "ng serve --port 3521 --proxy-config proxy.config.json",
     "start": "npm-run-all -p watch-css start-js",
     "ng": "ng",
@@ -23,6 +23,7 @@
     "@angular/platform-browser": "^2.3.1",
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
+    "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.1",
